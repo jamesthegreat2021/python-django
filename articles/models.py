@@ -6,6 +6,7 @@ class Article(models.Model):
     slug = models.SlugField()
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+    thumb = models.ImageField(default='default.png',blank=True)
 
     #defining the method that objects will automatically come with
     def __str__(self): 
